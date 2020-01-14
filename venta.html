@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  <title>Brand</title>
+</head> <!-- Cierra head -->
+<body>
+  <nav class="fadeInDown">
+    <img src="images/logo.png" alt="">
+    <ul>
+      <li>
+        <a href="#">Faqs</a></li>
+      <li>
+        <a href="#">Producto y descripción</a></li>
+    </ul>
+  </nav>
+  <!-- Empieza formulario venta -->
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <div class="modulo_pago">
+          <div class="pago_img fadeInUpTwo">
+            <img src="images/box2.png" alt="">
+          </div>
+          <div class="pago_text fadeInRight">
+            <h1>Producto 1</h1>
+            <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos, Miles de productos hay en el mercado, pero nada como una caja con gatitos
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-8">
+        <div class="modulo_pago">
+          <form action="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JUVHKH585QJFN" method="post">
+            <label class="fadeInFast" for="name">Nombre</label>
+
+            <input type="text" name="name" class="data fadeInFast" required>
+
+            <label class="fadeInFast" for="email">E-mail</label>
+
+            <input type="text" name="email" class= "data fadeInFast" required>
+
+            <label class="fadeInFast" for="phone">Teléfono</label>
+
+            <input type="text" name="phone" class= "data fadeInFast" required>
+
+            <input type="submit" class="venta_button fadeInFast" name="submit" value="Confirmar pago">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- cierra formulario venta -->
+  <footer>
+    <div class="option">Terminos y condiciones</div>
+    <div class="option">contacto@brand.com</div>
+  </footer>
+</body> <!-- Cierra body -->
+</html> <!-- Cierra html -->
