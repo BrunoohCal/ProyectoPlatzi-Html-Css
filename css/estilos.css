@@ -13,16 +13,34 @@
 }
 
 /* -------------------------------------------  */
+* {
+  margin: 0;
+}
+
 html, body{
   margin:0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
   color: var(--black-color);
-  height: 100vh;
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -2%;
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
 }
 
 p, label{
   font-size: var(--normal);
+}
+
+.site-footer, .page-wrap:after {
+  height: 2%;
 }
 
 nav{
@@ -201,7 +219,7 @@ h2.mention_title{
  border-style: solid;
 }
 /* ------------------------------------------- Footer */
-footer{
+.site-footer{
   display: flex;
   justify-content: space-between;
   font-size: 12px;
